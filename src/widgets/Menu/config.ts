@@ -1,20 +1,3 @@
-import { LinkStatus } from "./types";
-
-export const status = {
-  LIVE: <LinkStatus>{
-    text: "LIVE",
-    color: "failure",
-  },
-  SOON: <LinkStatus>{
-    text: "SOON",
-    color: "warning",
-  },
-  NEW: <LinkStatus>{
-    text: "NEW",
-    color: "success",
-  },
-};
-
 export const links = [
   {
     label: "Home",
@@ -39,7 +22,6 @@ export const links = [
     label: "Farms",
     icon: "FarmIcon",
     href: "/farms",
-    status: status.LIVE,
   },
   {
     label: "Pools",
@@ -57,20 +39,12 @@ export const links = [
     href: "/nft",
   },
   {
-    label: "Team Battle",
-    icon: "TeamBattleIcon",
-    href: "/competition",
-    status: status.SOON,
-  },
-  {
     label: "Profile & Teams",
     icon: "GroupsIcon",
-    status: status.LIVE,
     items: [
       {
         label: "Leaderboard",
-        href: "/teams",
-        status: status.NEW,
+        href: "/",
       },
       {
         label: "YourProfile",
@@ -119,21 +93,21 @@ export const links = [
     label: "More",
     icon: "MoreIcon",
     items: [
-      {
-        label: "Voting",
-        href: "https://voting.pancakeswap.finance",
-      },
+      // {
+      //   label: "Voting",
+      //   href: "https://voting.pancakeswap.finance",
+      // },
       {
         label: "Github",
-        href: "https://github.com/pancakeswap",
+        href: "https://github.com/goosedefi/",
       },
       {
         label: "Docs",
-        href: "https://docs.pancakeswap.finance",
+        href: "https://goosedefi.gitbook.io/goose-finance/",
       },
       {
         label: "Blog",
-        href: "https://pancakeswap.medium.com",
+        href: "https://goosefinance.medium.com/",
       },
     ],
   },
@@ -146,62 +120,67 @@ export const socials = [
     items: [
       {
         label: "English",
-        href: "https://t.me/pancakeswap",
+        href: "https://t.me/goosedefi",
       },
-      {
-        label: "Bahasa Indonesia",
-        href: "https://t.me/PancakeSwapIndonesia",
-      },
+      // {
+      //   label: "Bahasa Indonesia",
+      //   href: "https://t.me/PancakeSwapIndonesia",
+      // },
       {
         label: "中文",
-        href: "https://t.me/PancakeSwap_CN",
+        href: "https://t.me/goosefinancechinese",
       },
-      {
-        label: "Tiếng Việt",
-        href: "https://t.me/PancakeSwapVN",
-      },
+      // {
+      //   label: "Tiếng Việt",
+      //   href: "https://t.me/PancakeSwapVN",
+      // },
       {
         label: "Italiano",
-        href: "https://t.me/pancakeswap_ita",
+        href: "https://t.me/goosefinanceitalian",
       },
       {
         label: "русский",
-        href: "https://t.me/pancakeswap_ru",
+        href: "https://t.me/goosefinancerussian",
       },
       {
         label: "Türkiye",
-        href: "https://t.me/pancakeswapturkiye",
+        href: "https://t.me/GooseFinanceTurkey",
       },
-      {
-        label: "Português",
-        href: "https://t.me/PancakeSwapPortuguese",
-      },
+      // {
+      //   label: "Português",
+      //   href: "https://t.me/PancakeSwapPortuguese",
+      // },
       {
         label: "Español",
-        href: "https://t.me/PancakeswapEs",
+        href: "https://t.me/goosefinancespanish",
       },
       {
         label: "日本語",
-        href: "https://t.me/pancakeswapjp",
+        href: "https://t.me/goosefinancejapanese",
       },
       {
         label: "Français",
-        href: "https://t.me/pancakeswapfr",
+        href: "https://t.me/goosefinancefrench",
       },
       {
         label: "Announcements",
-        href: "https://t.me/PancakeSwapAnn",
+        href: "https://t.me/goosefinanceann",
       },
       {
-        label: "Whale Alert",
-        href: "https://t.me/PancakeSwapWhales",
+        label: "Price Bot",
+        href: "https://t.me/BinanceRocketEGG",
       },
     ],
   },
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/pancakeswap",
+    href: "https://twitter.com/goosedefi",
+  },
+  {
+    label: "Reddit",
+    icon: "RedditIcon",
+    href: "https://www.reddit.com/r/GooseFinanceofficial",
   },
 ];
 

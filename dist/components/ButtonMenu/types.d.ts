@@ -1,12 +1,12 @@
-/// <reference types="react" />
-import { BaseButtonProps, Scale, variants } from "../Button/types";
-export interface ButtonMenuItemProps extends BaseButtonProps {
+import { ButtonProps, Sizes, variants } from "../Button/types";
+export declare type ButtonMenuItemProps = {
     isActive?: boolean;
-}
+    size?: Sizes;
+} & ButtonProps;
 export interface ButtonMenuProps {
     variant?: typeof variants.PRIMARY | typeof variants.SUBTLE;
     activeIndex?: number;
-    onItemClick?: (index: number) => void;
-    scale?: Scale;
+    onClick?: (index: number) => void;
+    size?: Sizes;
     children: React.ReactElement[];
 }

@@ -9,15 +9,9 @@ export declare const variants: {
     readonly BINANCE: "binance";
     readonly FAILURE: "failure";
 };
-export declare const scales: {
-    readonly MD: "md";
-    readonly SM: "sm";
-};
-export declare type Scale = typeof scales[keyof typeof scales];
-export declare type Variant = typeof variants[keyof typeof variants];
+export declare type Variants = typeof variants[keyof typeof variants];
 export interface TagProps extends SpaceProps {
-    variant?: Variant;
-    scale?: Scale;
+    variant?: Variants;
     startIcon?: ReactNode;
     endIcon?: ReactNode;
     outline?: boolean;

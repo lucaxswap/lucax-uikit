@@ -1,6 +1,6 @@
 import { DefaultTheme } from "styled-components";
-import { Variant } from "../Button/types";
+import { Variants } from "../Button/types";
 declare const StyledButtonMenu: import("styled-components").StyledComponent<"div", DefaultTheme, {
-    variant: Variant;
+    variant: Variants;
 }, never>;
 export default StyledButtonMenu;

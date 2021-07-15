@@ -1,6 +1,6 @@
 import React from "react";
 import times from "lodash/times";
-import Flex from "../Box/Flex";
+import Flex from "../Flex/Flex";
 import BackgroundImage from "./BackgroundImage";
 import Img from "./Image";
 
