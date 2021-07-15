@@ -9,6 +9,7 @@ import Panel from "./Panel";
 import UserBlock from "./UserBlock";
 import { NavProps } from "./types";
 import { MENU_HEIGHT, SIDEBAR_WIDTH_REDUCED, SIDEBAR_WIDTH_FULL } from "./config";
+import { BellIcon } from "./icons";
 import Avatar from "./Avatar";
 
 const Wrapper = styled.div`
@@ -120,9 +121,10 @@ const Menu: React.FC<NavProps> = ({
           isDark={isDark}
           href={homeLink?.href ?? "/"}
         />
-        <Flex>
+        <Flex alignItems="center">
+          <BellIcon isDark={isDark} />
           <UserBlock account={account} login={login} logout={logout} />
-          {profile && <Avatar profile={profile} />}
+          {/* {profile && <Avatar profile={profile} />} */}
         </Flex>
       </StyledNav>
       <BodyWrapper>
