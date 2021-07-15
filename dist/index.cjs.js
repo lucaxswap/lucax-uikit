@@ -1842,8 +1842,8 @@ var useModal = function (modal, closeOnOverlayClick) {
 };
 
 var Icon$I = function (props) {
-    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 54 41" }, props),
-        React__default['default'].createElement("image", { width: "54", height: "41", href: '/images/menu/farm.png' })));
+    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 36 36" }, props),
+        React__default['default'].createElement("image", { width: "36", height: "36", href: '/images/menu/farm.png' })));
 };
 
 var Icon$J = function (props) {
@@ -1903,8 +1903,8 @@ var Icon$S = function (props) {
 };
 
 var Icon$T = function (props) {
-    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 26 38" }, props),
-        React__default['default'].createElement("image", { width: "26", height: "38", href: '/images/menu/staking.png' })));
+    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 36 36" }, props),
+        React__default['default'].createElement("image", { width: "36", height: "36", href: '/images/menu/staking.png' })));
 };
 
 var Icon$U = function (props) {
@@ -2064,13 +2064,13 @@ var Icon$18 = function (props) {
 };
 
 var Icon$19 = function (props) {
-    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 40 40" }, props),
-        React__default['default'].createElement("image", { width: "40", height: "40", href: '/images/menu/launch-pool.png' })));
+    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 36 36" }, props),
+        React__default['default'].createElement("image", { width: "36", height: "36", href: '/images/menu/launch-pool.png' })));
 };
 
 var Icon$1a = function (props) {
-    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 39 41" }, props),
-        React__default['default'].createElement("image", { width: "39", height: "41", href: '/images/menu/referral.png' })));
+    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 36 36" }, props),
+        React__default['default'].createElement("image", { width: "36", height: "36", href: '/images/menu/referral.png' })));
 };
 
 var Icon$1b = function (props) {
@@ -2405,7 +2405,7 @@ var Container$4 = styled__default['default'].div(templateObject_1$C || (template
 var PriceLink = styled__default['default'].a(templateObject_2$c || (templateObject_2$c = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"])));
 var SettingsEntry = styled__default['default'].div(templateObject_3$7 || (templateObject_3$7 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"])), MENU_ENTRY_HEIGHT);
 var SocialEntry = styled__default['default'].div(templateObject_4$2 || (templateObject_4$2 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"])), MENU_ENTRY_HEIGHT);
-var BoldText = styled__default['default'](Text)(templateObject_5$1 || (templateObject_5$1 = __makeTemplateObject(["\n  font-weight: 800;\n"], ["\n  font-weight: 800;\n"])));
+var BoldText = styled__default['default'](Text)(templateObject_5$1 || (templateObject_5$1 = __makeTemplateObject(["\n  font-weight: 800;\n  font-size: 14px;\n"], ["\n  font-weight: 800;\n  font-size: 14px;\n"])));
 var PanelFooter = function (_a) {
     var isPushed = _a.isPushed, pushNav = _a.pushNav, toggleTheme = _a.toggleTheme, isDark = _a.isDark, cakePriceUsd = _a.cakePriceUsd; _a.currentLang; _a.langs; _a.setLang; var priceLink = _a.priceLink;
     if (!isPushed) {
@@ -2424,16 +2424,16 @@ var PanelFooter = function (_a) {
         React__default['default'].createElement(SettingsEntry, null,
             React__default['default'].createElement(Flex, null, socials.map(function (social, index) {
                 var Icon = Icons$1[social.icon];
-                var iconProps = { width: "24px", color: "textSubtle", style: { cursor: "pointer" } };
+                var iconProps = { width: "18px", color: "textSubtle", style: { cursor: "pointer" } };
                 var mr = index < socials.length - 1 ? "8px" : 0;
                 return (React__default['default'].createElement(Link, { external: true, key: social.label, href: social.href, "aria-label": social.label, mr: mr },
                     React__default['default'].createElement(Icon, __assign({}, iconProps))));
             })),
             React__default['default'].createElement(Button, { variant: "text", onClick: function () { return toggleTheme(!isDark); } },
                 React__default['default'].createElement(Flex, { alignItems: "center" },
-                    React__default['default'].createElement(SunIcon, { color: isDark ? "textDisabled" : "text", width: "24px" }),
+                    React__default['default'].createElement(SunIcon, { color: isDark ? "textDisabled" : "text", width: "18px" }),
                     React__default['default'].createElement(Text, { color: "textDisabled", mx: "4px" }, "/"),
-                    React__default['default'].createElement(MoonIcon, { color: isDark ? "text" : "textDisabled", width: "24px" }))))));
+                    React__default['default'].createElement(MoonIcon, { color: isDark ? "text" : "textDisabled", width: "18px" }))))));
 };
 var templateObject_1$C, templateObject_2$c, templateObject_3$7, templateObject_4$2, templateObject_5$1;
 
@@ -2728,7 +2728,7 @@ var Menu = function (_a) {
         React__default['default'].createElement(StyledNav, { showMenu: showMenu },
             React__default['default'].createElement(Logo$1, { isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/" }),
             React__default['default'].createElement(Flex, { alignItems: "center" },
-                React__default['default'].createElement(Bell, { isDark: isDark }),
+                React__default['default'].createElement(Bell, { isDark: isDark, marginRight: "15px" }),
                 React__default['default'].createElement(UserBlock, { account: account, login: login, logout: logout }))),
         React__default['default'].createElement(BodyWrapper, null,
             React__default['default'].createElement(Panel, { isPushed: isPushed, isMobile: isMobile, showMenu: showMenu, isDark: isDark, toggleTheme: toggleTheme, langs: langs, setLang: setLang, currentLang: currentLang, cakePriceUsd: cakePriceUsd, pushNav: setIsPushed, links: links, priceLink: priceLink }),

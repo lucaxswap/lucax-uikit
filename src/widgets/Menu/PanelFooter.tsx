@@ -56,6 +56,7 @@ const SocialEntry = styled.div`
 
 const BoldText = styled(Text)`
   font-weight: 800;
+  font-size: 14px;
 `
 
 const PanelFooter: React.FC<Props> = ({
@@ -103,7 +104,7 @@ const PanelFooter: React.FC<Props> = ({
         <Flex>
           {socials.map((social, index) => {
             const Icon = Icons[social.icon];
-            const iconProps = { width: "24px", color: "textSubtle", style: { cursor: "pointer" } };
+            const iconProps = { width: "18px", color: "textSubtle", style: { cursor: "pointer" } };
             const mr = index < socials.length - 1 ? "8px" : 0;
             return (
               <Link external key={social.label} href={social.href} aria-label={social.label} mr={mr}>
@@ -115,11 +116,11 @@ const PanelFooter: React.FC<Props> = ({
         <Button variant="text" onClick={() => toggleTheme(!isDark)}>
           {/* alignItems center is a Safari fix */}
           <Flex alignItems="center">
-            <SunIcon color={isDark ? "textDisabled" : "text"} width="24px" />
+            <SunIcon color={isDark ? "textDisabled" : "text"} width="18px" />
             <Text color="textDisabled" mx="4px">
               /
             </Text>
-            <MoonIcon color={isDark ? "text" : "textDisabled"} width="24px" />
+            <MoonIcon color={isDark ? "text" : "textDisabled"} width="18px" />
           </Flex>
         </Button>
       </SettingsEntry>
