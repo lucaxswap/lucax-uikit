@@ -117,31 +117,31 @@ export const socials = [
   {
     label: "Telegram",
     icon: "TelegramIcon",
-    href: ""
+    href: "https://t.me/joinchat/V6NKOyaJ4a0dd57x"
   },
   {
     label: "Medium",
     icon: "MediumIcon",
-    href: ""
+    href: "https://medium.com/@Lucax-Finance"
   },
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "#",
+    href: "https://twitter.com/Lucax_Finance",
   },
   {
     label: "Instagram",
     icon: "InstagramIcon",
-    href: "#",
+    href: "https://www.instagram.com/lucax.finance",
   },
   {
     label: "Reddit",
     icon: "RedditIcon",
-    href: "#",
+    href: "https://www.reddit.com/user/Lucax_Finance",
   },
 ];
 
 export const MENU_HEIGHT = 64;
 export const MENU_ENTRY_HEIGHT = 48;
-export const SIDEBAR_WIDTH_FULL = 240;
+export const SIDEBAR_WIDTH_FULL = 260;
 export const SIDEBAR_WIDTH_REDUCED = 56;
